@@ -29,7 +29,7 @@ const Feed = () => {
     const data = await response.json();
     setAllPosts(data);
     setShowPosts(data);
-    console.log("fetched");
+    console.log("fetched: ", data);
   } 
  
 
