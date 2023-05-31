@@ -15,7 +15,7 @@ const MyProfile = () => {
       const response = await fetch(`/api/users/${session?.user.id}/posts`, {
         method : "GET",
         headers : {
-          "Cache-Control": "no-store"
+          "cache-control": "no-store"
         }
       });
       const data = await response.json();
